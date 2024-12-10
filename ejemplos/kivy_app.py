@@ -9,3 +9,8 @@ class MyApp(App):
         layout = BoxLayout(orientation='vertical')
         layout.add_widget(Label(text="Hola Mundo"))
         self.text_input = TextInput()
+        layout.add_widget(self.text_input)
+        boton = Button(text="Enviar")
+        boton.bind(on_press=self.enviar)
+        layout.add_widget(boton)
+        return layout
