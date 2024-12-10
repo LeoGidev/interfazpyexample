@@ -14,3 +14,8 @@ class MyApp(App):
         boton.bind(on_press=self.enviar)
         layout.add_widget(boton)
         return layout
+
+    def enviar(self, instance):
+        print(f"Mensaje ingresado: {self.text_input.text}")
+
+MyApp().run()
