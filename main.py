@@ -18,3 +18,8 @@ if __name__ == "__main__":
     opcion = input("Ingresa el número del ejemplo: ")
     opciones = {"1": "tkinter", "2": "pyqt", "3": "kivy", "4": "wxpython"}
     ejemplo = opciones.get(opcion)
+
+    if ejemplo:
+        ejecutar_ejemplo(ejemplo)
+    else:
+        print("Opción inválida")
