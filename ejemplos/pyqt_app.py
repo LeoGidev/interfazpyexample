@@ -12,3 +12,11 @@ layout = QVBoxLayout()
 layout.addWidget(QLabel("Hola Mundo"))
 entrada = QLineEdit()
 layout.addWidget(entrada)
+
+boton = QPushButton("Enviar")
+boton.clicked.connect(enviar)
+layout.addWidget(boton)
+
+ventana.setLayout(layout)
+ventana.show()
+app.exec_()
