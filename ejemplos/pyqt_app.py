@@ -7,3 +7,8 @@ def enviar():
 app = QApplication([])
 ventana = QWidget()
 ventana.setWindowTitle("Ejemplo PyQt")
+
+layout = QVBoxLayout()
+layout.addWidget(QLabel("Hola Mundo"))
+entrada = QLineEdit()
+layout.addWidget(entrada)
